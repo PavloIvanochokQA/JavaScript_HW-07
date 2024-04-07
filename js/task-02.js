@@ -3,7 +3,7 @@ const ingredients = [
   'Mushrooms',
   'Garlic',
   'Herbs',
-  'Condiments',
+  'Condiments'
 ];
 const listIngredients = document.querySelector("#ingredients");
 const ingArray = ingredients.map(ingred => {
