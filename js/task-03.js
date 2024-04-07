@@ -18,20 +18,3 @@ const markup = images.map(element =>
   `<li><img src="${element.url}" alt="${element.alt}" height = "600" width = "1000"></li>`
 ).join("");
 galleryListRef.insertAdjacentHTML("beforeend", markup);
-
-
-
-
-/*const gallaryListRef = document.querySelector('.gallery');
-const imagesList = images.map(element => {
-  const liElem = document.createElement('li');
-  liElem.classList.add('image');
-  const imgElem = document.createElement('img');
-  imgElem.src = element.url;
-  imgElem.alt = element.alt;
-  imgElem.height = "600";
-  imgElem.width = "1000";
-  liElem.append(imgElem);
-  return liElem;
-});
-gallaryListRef.append(...imagesList);*/

@@ -2,13 +2,12 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
-}
+};
 
 const btnCreateRef = document.querySelector('button[data-create]');
 const btnDestroyRef = document.querySelector('button[data-destroy]');
-const divBoxes = document.querySelector('#boxes')
-const inputFieldRef = document.querySelector("input")
-
+const divBoxes = document.querySelector('#boxes');
+const inputFieldRef = document.querySelector("input");
 
 btnCreateRef.addEventListener("click", createBoxes);
 btnDestroyRef.addEventListener("click", destroyBoxes);
@@ -24,7 +23,7 @@ function createBoxes(amount) {
     markup = markup.concat(
       `<div width="${divWidth}" height = "${divHeight}" style="background-color:${getRandomHexColor()}"></div>`
     );
-  }
+  };
   divBoxes.innerHTML = markup
 };
 
